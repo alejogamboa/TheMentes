@@ -1,0 +1,28 @@
+version: "3.9"
+
+services:
+
+   database:
+    image: postgres:latest
+    restart: always
+    container_name: the_mentes_db_development
+    ports:
+      - "${DB_EXPOSE_PORT}:5432"
+    environment:
+      POSTGRES_DB: ${DB_NAME}
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+    volumes:
+      - ./var/db_data:/var/lib/postgresql/data
+    networks:
+      app_network:
+        aliases:
+          - "${DB_HOST}"
+
+
+networks:
+  app_network:
+    name: app_net
+    driver: bridge
+    ipam:
+      driver: default

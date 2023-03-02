@@ -1,0 +1,87 @@
+:root {
+  --sucess-color: #34d399;
+  --sucess-color-l: #ecfdf5;
+  
+  --info-color: #22d3ee;
+  --info-color-l: #ecfeff;
+  
+}
+
+.dark {
+  --sucess-color: #34d399;
+  --sucess-color-l: #064e3b;
+
+  --info-color: #22d3ee;
+  --info-color-l: #164e63;
+  
+}
+
+.Endpoint {
+  display: flex;
+  align-items: center;
+  padding: .7rem .8rem;
+  border-radius: 0.5rem;
+  margin: 2rem 0;
+}
+
+.Endpoint--success {
+  background-color: var(--sucess-color-l);
+}
+
+.Endpoint--info {
+  background-color: var(--info-color-l);
+}
+
+.Tag {
+  padding: 6px 10px;
+  display: table;
+  border-radius: 7px;
+  font-weight: 500;
+  margin-right: 12px;
+}
+
+.Tag--success {
+  background-color: var(--sucess-color);
+  color: #fff;
+}
+
+.Tag--info {
+  background-color: var(--info-color);
+  color: #fff;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-bottom: 2rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.boxed {
+  /* text-align: center; */
+  margin-bottom: 46px;
+}
+
+.boxed h4 {
+  text-align: center;
+}
+
+.boxed img {
+  margin: 0 auto 12px;
+}
+
+.medium-zoom-overlay {
+  z-index: 99;
+}
+.medium-zoom-image--opened {
+  z-index: 100;
+}
